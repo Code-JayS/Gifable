@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/images/Giphy.png" width="30" height="30" class="d-inline-block align-top"
+                alt="Giphy Icon by Luc Chaffard>">
+            all the gifs
+        </a>
+        <form class="form-inline" id="gif-form">
+                <div class="form-group rounded mx-sm-3 mb-2">
+                    <label for="newGif" class="sr-only">Enter New Gif</label>
+                    <input type="text" class="text-info form-control" id="newGif" placeholder="Enter New Gif Here">
+                </div>
+                <button type="submit" class="btn btn-info mb-2" id="add-gif">Add that Gif</button>
+            </form>
+    </nav>
+
+    <div class="container-fluid">
+
+        <!-- Rendered Buttons will get Dumped Here  -->
+        <div class="grid" id="buttons-view">
+
+
+            <form class="form-inline" id="gif-form">
+                <div class="form-group rounded mx-sm-3 mb-2 bg-info text-light">
+                    <label for="newGif" class="text-light bg-info sr-only">Enter New Gif</label>
+                    <input type="text" class="text-light bg-info form-control" id="newGif" placeholder="Enter New Gif">
+                </div>
+                <button type="submit" class="btn btn-info mb-2">Add that Gif</button>
+            </form>
+        </div>
+        <div class="card-columns" id="gifs-view"></div>
+        <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
